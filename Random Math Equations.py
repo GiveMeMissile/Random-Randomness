@@ -41,3 +41,19 @@ while key < 21:
                         print("You are incorrect. The answer is %d" % (c))
                         sub += 1
                         key += 1
+                else:
+                    if(mul < 6):
+                        c = a * b
+                        ans = int(input("Answer the following multiplication question. %d * %d = " % (a, b)))
+                        if(ans == c):
+                            print("You are correct")
+                            key += 1
+                            score += 1
+                            mul += 1
+                        else:
+                            print("You are incorrect. The answer was %d" % (c))
+                        score += 1
+                    else:
+                        print("You are incorrect. The answer is %d" % (c))
+                        sub += 1
+                        key += 1
