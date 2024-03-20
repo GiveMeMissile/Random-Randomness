@@ -3,6 +3,7 @@ add = 0
 sub = 0
 mul = 0
 div = 0
+score = 0
 import random
 def math1():
     for i in range(1):
@@ -17,6 +18,26 @@ while key < 21:
             b = random_number
             if(add < 6):
                 c = a + b
-                ans = int(input("Answer the following math question. %d + %d = " % (a, b)))
+                ans = int(input("Answer the following addition question. %d + %d = " % (a, b)))
+                if(ans == c):
+                    print("You are correct")
+                    key += 1
+                    add += 1
+                    score += 1
+                else:
+                    print("you are incorrect. The answer is %d" % (c))
+                    key += 1
+                    add += 1
             else:
-                print("no")
+                if(sub < 6):
+                    c = a - b
+                    ans = int(input("Answer the following subtraction question. %d - %d = " % (a, b)))
+                    if(ans == c):
+                        print("You are correct")
+                        key += 1
+                        sub += 1
+                        score += 1
+                    else:
+                        print("You are incorrect. The answer is %d" % (c))
+                        sub += 1
+                        key += 1
