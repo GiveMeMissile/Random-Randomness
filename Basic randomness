@@ -17,6 +17,8 @@ while e == (2):
             a += 1
             o += 1
             print("Correct")
+            print("The random number is %d" % (random_number))
         else:
             o += 1
             print("incorrect")
+            print("The random number is %d" % (random_number))
