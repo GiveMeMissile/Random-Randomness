@@ -2,39 +2,30 @@ import random
 key = 0
 name = input("What is your name?: ")
 def rand():
-    x = random.randint(1, 7)
-    return x
+    yield random.randint(1, 7)
 def ran():
-    a = random.randint(2, 6)
-    return a
+    yield random.randint(2, 6)
 def rann():
-    b = random.randint(1, 12)
-    return b
+    yield random.randint(1, 12)
 def randd():
-    e = random.randint(9, 35)
-    return e
-def Math():
-    x = rand()
-    a = ran()
-    b = rann()
-    e = randd()
+    yield random.randint(9, 50)
+def Math(x, a, b, e):
     if(key < 5):
         c = b*x - e
         return c
-def question():
-    x = rand()
-    a = ran()
-    b = rann()
-    e = randd()
-    c = Math()
+def question(x, a, b, e):
+    c = Math(x, a, b, e)
     if(key < 5):
         ans = int(input("Solve for x, %dx - %d = %d?: " % (b, e, c)))
         return ans
-def results():
-    x = rand()
-    ans = question()
+def results(x, a, b, e):
+    ans = question(x, a, b, e)
     if(x == ans):
         print("Correct")
     else:
         print("Incorrect, x = %d" % (x))
-results()
+x = random.randint(1, 7)
+a = random.randint(2, 6)
+b = random.randint(1, 12)
+e = random.randint(9, 50)
+results(x, a, b, e)
