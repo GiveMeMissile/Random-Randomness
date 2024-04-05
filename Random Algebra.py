@@ -25,8 +25,16 @@ def question():
     x = rand()
     a = ran()
     b = rann()
-    e = randd
+    e = randd()
+    c = Math()
     if(key < 5):
-        ans = int(input("Solve for x, %d%d - %d = %d") % (b, x, e, c))
+        ans = int(input("Solve for x, %dx - %d = %d?: " % (b, e, c)))
         return ans
-        
+def results():
+    x = rand()
+    ans = question()
+    if(x == ans):
+        print("Correct")
+    else:
+        print("Incorrect, x = %d" % (x))
+results()
