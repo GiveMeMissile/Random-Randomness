@@ -3,7 +3,6 @@ key = -1
 score = 0
 name = input("What is your name?: ")
 print("Hello %s. Welcome to the randomly generated algebra test. You will be aksed a series of randomly generated algebra questions. There will be 15 questions in total. Good luck." % name)
-
 def Math(x, a, b, e, f, key):
     if(key < 5):
         c = b*x - e
@@ -21,14 +20,29 @@ def Math(x, a, b, e, f, key):
 def question(x, a, b, e, f, key):
     c = Math(x, a, b, e, f, key)
     if(key < 5):
-        ans = int(input("Solve for x, %dx - %d = %d?: " % (b, e, c)))
-        return ans
+        try:
+            ans = int(input("Solve for x, %dx - %d = %d?: " % (b, e, c)))
+            return ans
+        except:
+            print("Put in a real number next time.")
+            ans = 20
+            return ans
     elif(key < 10):
-        ans = int(input("Solve for x, %dx + %d = %dx + %d?: " % (b, e, a, c)))
-        return ans
+        try:
+            ans = int(input("Solve for x, %dx + %d = %dx + %d?: " % (b, e, a, c)))
+            return ans
+        except:
+            print("Put in a real number next time.")
+            ans = 20
+            return ans
     else:
-        ans = int(input("Solve for x, %d(%dx - %d) = %dx + %d: " % (a, b, e, f, c)))
-        return ans
+        try:
+            ans = int(input("Solve for x, %d(%dx - %d) = %dx + %d: " % (a, b, e, f, c)))
+            return ans
+        except:
+            print("Put in a real number next time.")
+            ans = 20
+            return ans
 def correct(x, a, b, e, f, key, score):
     ans = question(x, a, b, e, f, key)
     if(x == ans):
