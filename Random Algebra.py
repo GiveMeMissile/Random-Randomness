@@ -2,7 +2,7 @@ import random
 key = -1
 score = 0
 name = input("What is your name?: ")
-print("Hello %s. Welcome to the randomly generated algebra test. You will be aksed a series of randomly generated algebra questions. There will be 15 questions in total. Good luck." % name)
+print("Hello %s. Welcome to the randomly generated algebra test. You will be asked a series of randomly generated algebra questions. There will be 15 questions in total. Good luck." % name)
 def Math(x, a, b, e, f, key):
     if(key < 5):
         c = b*x - e
