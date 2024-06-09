@@ -49,3 +49,4 @@ question = 0
 problems = quad(question)
 results = quiz(problems, question)
 display(results)
+print("Thank you for taking the quadratic equation quiz. Good bye and have a WONDERFUL rest of your day (:")
