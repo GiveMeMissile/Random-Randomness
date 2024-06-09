@@ -44,6 +44,7 @@ def quiz(problems, question):
 def display(results):
   dis = PANDAAAAAAAA.DataFrame(results, columns= ["Question", "Answer", "User Answer", "Correct/Incorrect", "Time"])
   print(dis)
+input("Why hello there, welcome to the quadratic equation quiz. You will answer 15 quadratic problems and will have to solve them. You will NOT input x for your answer. Press enter to continue.")
 question = 0
 problems = quad(question)
 results = quiz(problems, question)
