@@ -76,6 +76,6 @@ function divisionEquations(){
             console.log("You are incorrect. " +answer+ " is not the answer. The answer is " +c+ ".");
         }
     }
+    return division_Score
 }
-
 main();
