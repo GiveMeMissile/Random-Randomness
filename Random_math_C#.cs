@@ -4,13 +4,45 @@ using System;
 public class HelloWorld
 {
     public static void Main(string[] args)
-    {
-        int correct = 0;
+    {   
         Console.WriteLine("Hello. You will be taking a 20 question quiz. Where you will need to answer 20 very easy math questions. Good luck (:");
-        correct = Addition(correct);
-        correct = Subtraction(correct);
-        correct = Multiplication(correct);
-        correct = Division(correct);
+        while(true)
+        {
+            int correct = 0;
+            correct = Addition(correct);
+            correct = Subtraction(correct);
+            correct = Multiplication(correct);
+            correct = Division(correct);
+            int grade = (correct/20)*100;
+            if (grade >= 90)
+            {
+                Console.WriteLine("CONGRATULATIONS!!!, YOU DOMINATED THIS QUIZ WITH A "+grade+"/100. WHAT A GOOD JOB YOU HAVE DONE!!!!!! HAVE A WONDERFUL REST OF YOUR DAY!!!");
+            }
+            else if(grade >= 70)
+            {
+                Console.WriteLine("Congratulations, you passed the quiz with a "+grade+"/100. Good job and have a WONDERFUL rest of your day.");
+            }
+            else if(grade >= 50)
+            {
+                Console.WriteLine("Womp Womp, it looks like you failed the test with a "+grade+"/100. This is quite a bad score. You should try again to get a better score.");
+            }
+            else{
+                Console.WriteLine("OH...MY...MATH... you failed with a [SWEAR]ING "+grade+"/100!!!! THAT IS ATROCIOUS!!! HOW IS THIS POSSIBLE!!! YOU SHALL LEAVE AND NEVER RETURN!!!!!!!! Idiot.");
+                break;
+                }
+            
+            Console.WriteLine("Do you want to take the quiz again?");
+            string response = Console.ReadLine();
+            if(response == "yes" || response =="Yes")
+            {
+                Console.WriteLine("Ok you shall take the quiz again.");
+            }
+            else
+            {
+                Console.WriteLine("Ok you shall not retake the quizz. Have a nice day (:");
+                break;
+            }
+        }
     }
     static int Addition(int correct)
     {
