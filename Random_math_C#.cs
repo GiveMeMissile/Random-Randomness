@@ -13,7 +13,7 @@ public class HelloWorld
             correct = Subtraction(correct);
             correct = Multiplication(correct);
             correct = Division(correct);
-            int grade = (correct/20)*100;
+            int grade = ((correct*100)/20);
             if (grade >= 90)
             {
                 Console.WriteLine("CONGRATULATIONS!!!, YOU DOMINATED THIS QUIZ WITH A "+grade+"/100. WHAT A GOOD JOB YOU HAVE DONE!!!!!! HAVE A WONDERFUL REST OF YOUR DAY!!!");
@@ -145,7 +145,7 @@ public class HelloWorld
             Random random = new Random();
             int a = random.Next(5, 50);
             int b = random.Next(5, 50);
-            int c = a+b;
+            int c = a*b;
             int answer = -1;
             Console.WriteLine("What is "+a+ "*" +b+"?:");
             try
