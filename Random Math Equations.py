@@ -1,3 +1,6 @@
+# Looking back at this program makes me wanan cry.
+# WTF IS THIS OLD CODE!!!
+
 activate = 20
 add = 0
 sub = 0
