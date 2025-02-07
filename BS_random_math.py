@@ -1,6 +1,6 @@
 import random
 import time
-input("Whu hello their you little human. You will be taking a math quiz. its very simple math and if you fail this then you are an absoulte baffoon (or 5 years old). Click enter to start")
+input("Why hello their you little human. You will be taking a math quiz. its very simple math and if you fail this then you are an absoulte baffoon (or 5 years old). Click enter to start")
 
 def thing(x):
     start_test = time.time()
