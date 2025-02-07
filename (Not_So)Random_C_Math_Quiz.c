@@ -9,11 +9,11 @@ const int MULTIPLICATION_MAX = 50;
 int main()
 {
     printf("Hello. You will be taking a randomized math quiz. \nThis quiz will go over: Addition, Subtraction, Multiplication, and Division.\nGood Luck.");
-    int correct = 10;
-    // correct = addition();
-    // correct = subtraction(correct);
-    // correct = multiplication(correct);
-    // correct = division(correct);
+    int correct;
+    correct = addition();
+    correct = subtraction(correct);
+    correct = multiplication(correct);
+    /orrect = division(correct);
     end(correct);
     return 0;
 }
